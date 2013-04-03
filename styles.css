@@ -1,0 +1,73 @@
+.block_straw_poll div.content h2.question{
+	text-align: center;
+	font-size: 1.8em;
+	margin: 0 0 0.5em 0;
+	letter-spacing: -0.05em;
+	font-weight: 300;
+}
+
+.block_straw_poll div.content ul.choices{
+	text-align:center;
+}
+
+.block_straw_poll div.content ul.choices li.choice{
+	display: inline-block;
+	padding: .8em;
+	margin: 2px;
+	background: #555;
+	color: white;
+	border-radius: 5px;
+}
+
+.block_straw_poll div.content ul.choices li.choice.chosen,
+.block_straw_poll div.content ul.choices li.choice:hover{
+	background: #287D7D;
+}
+
+.block_straw_poll div.content ul.choices li.choice a{
+	color: white;
+}
+
+.block_straw_poll #chart{
+	text-align: center;
+	width: 100%;
+	margin: 2em 0;
+}
+
+.block_straw_poll #chart p.choicetext{
+	margin: 1em 0 .3em 0;
+	font-size:0.95em;
+	letter-spacing: -0.1em;
+}
+
+.block_straw_poll #chart div.pcentbar{
+	display:inline-block;
+	*display:block;
+	height: 2em;
+	font-weight: .8em;
+	text-align: center;
+	background-color: #999;
+	margin: 0;
+	min-width: 1em;
+	text-align: right;
+	padding: .4em 1em;
+	box-sizing:border-box;
+	border-radius: 2em 0.7em 2em 0.7em;
+	font-family:Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
+	color: #FFF;
+}
+
+.block_straw_poll #chart div.pcentbar.tone0{
+	background-color: #C6E070;
+}
+.block_straw_poll #chart div.pcentbar.tone1{
+	background-color: #287D7D;
+}
+
+.block_straw_poll div.footer p{
+	font-size: .75em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/straw_poll/db" VERSION="20130319" COMMENT="XMLDB file for Moodle blocks/straw_poll"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_straw_poll_responses" COMMENT="Results from a straw poll">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="instanceid"/>
+        <FIELD NAME="instanceid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="the instance of straw poll block that this entry refers to" PREVIOUS="id" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="the user that has responded" PREVIOUS="instanceid" NEXT="choice"/>
+        <FIELD NAME="choice" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="the choice that this user selected" PREVIOUS="userid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="block_instance"/>
+        <KEY NAME="block_instance" TYPE="foreign" FIELDS="instanceid" REFTABLE="block_instances" REFFIELDS="id" PREVIOUS="primary" NEXT="user_link"/>
+        <KEY NAME="user_link" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" PREVIOUS="block_instance"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
