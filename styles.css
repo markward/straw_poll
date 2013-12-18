@@ -51,6 +51,7 @@
 	min-width: 1em;
 	text-align: right;
 	padding: .4em 1em;
+	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	border-radius: 2em 0.7em 2em 0.7em;
 	font-family:Consolas,'Lucida Console','DejaVu Sans Mono',monospace;
