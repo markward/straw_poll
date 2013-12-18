@@ -2,6 +2,7 @@
     $string['pluginname'] = 'Straw Poll';	
 	
     $string['straw_poll:respond'] = 'User can respond to straw poll';	
+    $string['straw_poll:addinstance'] = 'User can add a straw poll block';	
 	
     $string['canchange'] = 'User can change choice';	
     $string['cantvote'] = 'Sorry, you don\'t have permission to take part in this poll.';	
